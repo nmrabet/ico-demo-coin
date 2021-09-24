@@ -1,38 +1,372 @@
-.App {
-  text-align: center;
+* {
+  font-family: Roboto, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  opacity: 0.95;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  background-color: #ffffff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.titleICO {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+}
+
+.titleICO > i {
+  margin-right: 3px;
+  font-size: 40px;
+}
+
+.titleICO > div {
+  font-size: 20px;
+}
+
+.rightNav {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.rightNav > .material-icons {
+  font-size: 60px;
+  margin-right: 2px;
+  opacity: 0.8;
+}
+
+.myAccountBox > .address,
+.eth,
+.dctoken {
+  font-size: 12px;
+}
+
+.container {
+  background-color: #1954f0;
+  width: 100%;
+  background-image: radial-gradient(
+    circle farthest-corner at 50% 50%,
+    #39f,
+    #339
+  );
+  padding-bottom: 25px;
+}
+
+.containerMiddle {
+  width: 1000px;
+  margin: 0px auto;
+  color: white;
+  padding-top: 80px;
+}
+
+.header1 {
+  padding-top: 2em;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.movieContainer {
+  width: 500px;
+  padding-bottom: 40px;
+}
+
+.buttonContainer > div {
+  margin-top: 20px;
+}
+
+.textArea {
+  font-size: 18px;
+}
+
+.video-react,
+.video-react .video-react-poster {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* CSS Code for Start Page */
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+.tokenSaleContainer {
+  width: 1000px;
+  background-color: white;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  margin-top: -60px;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 50px;
+}
+.tokenSaleLeftSide {
+  width: 500px;
+  border-right: 1px solid #d9e5f4;
+  height: 100%;
+  margin-top: 10px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+.tokensSold,
+.contributors {
+  font-size: 20px;
+  color: black;
+  opacity: 0.87;
+}
+.totalSuppy {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: black;
+  opacity: 0.87;
+}
+.titleTokenSale {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  width: 500px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  opacity: 0.87;
+}
+.tokenSaleEnds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 15px;
+  opacity: 0.87;
+  margin-top: 10px;
+}
+.time {
+  margin-top: 20px;
+}
+.time > div {
+  color: black;
+}
+.headerTime {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  opacity: 0.87;
+}
+.Icons {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.Icons i {
+  font-size: 25px;
+  color: black;
+  opacity: 0.87;
+}
+
+/* CSS Code for About Page */
+.whatIs,
+.team,
+.roadmap,
+.contribute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: black;
+  opacity: 0.87;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+.textAreaWhatIs {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+.whatIsHeader {
+  font-size: 20px;
+  color: black;
+  opacity: 0.87;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.whitepaper {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cacaca;
+  padding: 10px 0;
+  margin-top: 80px;
+}
+
+.roadmapImage img {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/*CSS Code for Contribute Page */
+.contributeContainer {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #cacaca;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.buyCoins {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amountToBuy {
+  font-weight: bold;
+  color: black;
+  opacity: 0.87;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.etherDC {
+  margin-left: 10px;
+  color: black;
+  opacity: 0.77;
+}
+.successfully {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 25px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: #43a047;
+  margin-top: 10px;
   color: white;
+  padding: 20px;
+}
+.buttonBuy {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.errorMessage {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #d32e30;
+  margin-top: 10px;
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.errorMessage > i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+.loadingText {
+  font-size: 25px;
+  color: black;
+  opacity: 0.87;
+  font-weight: bold;
+}
+.loadTextSub {
+  font-size: 18px;
+  color: black;
+  opacity: 0.77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.loadingContainer > div {
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/*CSS Code for Team Page */
+.teamSub {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  opacity: 0.76;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.teamPics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.circlePic img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.userName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
+  opacity: 0.87;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.userText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  opacity: 0.77;
 }
